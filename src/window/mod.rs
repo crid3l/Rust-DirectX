@@ -28,7 +28,7 @@ use winapi::um::winuser::{
 
 
 pub struct Window {
-    window_handle: HWND
+    pub window_handle: HWND
 }
 
 pub fn get_window(width: i32, height: i32, window_str: &str, class_str: &str) -> Result<Window, std::io::Error> {
